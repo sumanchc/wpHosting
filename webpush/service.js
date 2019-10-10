@@ -1,0 +1,1 @@
+importScripts('https://stage.cdn.responsys.net/e1/responsysimages/content/cloudqade011/service.js');

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/site.css">
+  <script type="text/javascript" id="rsyswpsdk" src="https://stage.cdn.responsys.net/e1/responsysimages/content/cloudqade011/wpIndex.js" wpconfig="{&quot;appserviceKey&quot;:&quot;BMZLkm+xFfXcSznagsfdCAPLb3EG4IjCdesiqk7qiHxtaDPBWwt3yJRlpcvcR5VG8Iwie3M0gFKagI9yzgPcHAY=&quot;, &quot;apiKey&quot;:&quot;testWebApp&quot;, &quot;appId&quot;:&quot;testAppId&quot;, &quot;accountToken&quot;: &quot;AZTZXYBCEDGASDF&quot;, &quot;appver&quot;: &quot;1.0.0&quot;, &quot;apiHost&quot;:&quot;http://localhost:4000/save-subscription&quot;,  &quot;lazy&quot;:true}"></script>
+<script type="text/javascript">
+     function showData(data){
+      document.getElementById('dataSection').innerText = data;
+     }
+  </script>
+</head>
+<body>
+<div class="col-sm-12 text-left" id="registration"> 
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>
+     <div>
+       <div id="dataSection">
+       </div>
+      <button id="permission-btn" onclick="showData(webPushManager.getNotificationPermission());" class="btn btn-primary btn-sm">Notification Permission Status</button>
+      </div>
+ </div>
+ </body>
+ </html>

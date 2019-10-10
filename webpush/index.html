@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Push Test Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/site.css">
+  <script type="text/javascript" id="rsyswpsdk" src="https://stage.cdn.responsys.net/e1/responsysimages/content/cloudqade011/wpIndex.js" wpconfig="{&quot;appserviceKey&quot;:&quot;BMZLkm+xFfXcSznagsfdCAPLb3EG4IjCdesiqk7qiHxtaDPBWwt3yJRlpcvcR5VG8Iwie3M0gFKagI9yzgPcHAY=&quot;, &quot;apiKey&quot;:&quot;testWebApp&quot;, &quot;appId&quot;:&quot;testAppId&quot;, &quot;accountToken&quot;: &quot;AZTZXYBCEDGASDF&quot;, &quot;appver&quot;: &quot;1.0.0&quot;, &quot;apiHost&quot;:&quot;http://localhost:4000/save-subscription&quot;,  &quot;lazy&quot;:true}"></script>
+
+</head>
+ <script type="text/javascript">
+    
+   function loadPage(url) {
+    
+    var innerTxt = '<object type="text/html" class="col-sm-12 text-left row content" data="'+ url + '"></object>';
+    document.getElementById("pagecontent").innerHTML= innerTxt;
+    
+   }
+
+ </script>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li ><a href="./pages/subscription.html">Subscription</a></li>
+        <li><a href="./pages/wpApi.html">Web Push API</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>&nbsp;</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      
+    </div>
+    <div class="col-sm-8 text-left" id="pagecontent"> 
+      <h1>Test Web Push web Application</h1>
+       <p> This site is to evaluate and test Resonsys web push sdk functionality.</p>
+       <p> Responsys web push SDK is split into multiple API  as mentioned Below</p>
+       <ul>
+          <li>Subscription</li>
+          <li>API Interaction</li>
+          <li>Error/Debug Traces</li> 
+       </ul>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div >
+        <p>&nbsp;</p>
+      </div>
+      <div >
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&nbsp;</p>
+</footer>
+
+</body>
+</html>

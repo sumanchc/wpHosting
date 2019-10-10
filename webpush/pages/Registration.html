@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../css/site.css">
+  <script type="text/javascript" id="rsyswpsdk" src="https://stage.cdn.responsys.net/e1/responsysimages/content/cloudqade011/wpIndex.js" wpconfig="{&quot;appserviceKey&quot;:&quot;BMZLkm+xFfXcSznagsfdCAPLb3EG4IjCdesiqk7qiHxtaDPBWwt3yJRlpcvcR5VG8Iwie3M0gFKagI9yzgPcHAY=&quot;, &quot;apiKey&quot;:&quot;testWebApp&quot;, &quot;appId&quot;:&quot;testAppId&quot;, &quot;accountToken&quot;: &quot;AZTZXYBCEDGASDF&quot;, &quot;appver&quot;: &quot;1.0.0&quot;, &quot;apiHost&quot;:&quot;http://localhost:4000/save-subscription&quot;,  &quot;lazy&quot;:true}"></script>
+
+  <script type="text/javascript">
+  	 function showData(data){
+  	 	document.getElementById('viewSection').value = data;
+  	 }
+  </script>
+</head>
+<body>
+<div class="row">
+  <div class="col-sm-12 text-left " id="registration"> 
+      <br/><br/>
+      <textarea rows="10" cols="50" id="viewSection"></textarea><br/>
+      <button id="permission-btn" onclick="webPushManager.register();" class="btn btn-primary btn-sm">Register</button><br/>
+      <button id="permission-btn" onclick="showData(webPushManager.getRegistionData());" class="btn btn-primary btn-sm">Get Registion Data</button>
+ </div>
+
+</div>
+ </body>
+ </html>
